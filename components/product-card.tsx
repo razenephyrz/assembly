@@ -22,9 +22,9 @@ export function ProductCard({ name, price, imageDefault, imageWithModel, bgColor
         transform: isHovered ? "translateY(-4px)" : "translateY(0)",
       }}
     >
-      <div className="overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-200 hover:shadow-lg">
+      <div className="overflow-hidden rounded-lg shadow-md transition-shadow duration-200 hover:shadow-lg" style={{ backgroundColor: bgColor }}>
         {/* Image Container */}
-        <div className="relative w-full" style={{ backgroundColor: bgColor }}>
+        <div className="relative w-full">
           {/* Price Badge - Top Right */}
           <div 
             className="absolute right-4 top-4 z-10 rounded-md px-3 py-1.5 bg-white"
@@ -44,7 +44,7 @@ export function ProductCard({ name, price, imageDefault, imageWithModel, bgColor
           </div>
 
           {/* Product Image */}
-          <div className="overflow-hidden" style={{ backgroundColor: bgColor, aspectRatio: "9/16" }}>
+          <div className="overflow-hidden bg-white" style={{ aspectRatio: "9/16" }}>
             <img
               src={isHovered ? imageWithModel : imageDefault}
               alt={name}

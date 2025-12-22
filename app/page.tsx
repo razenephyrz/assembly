@@ -6,56 +6,56 @@ const products = [
     price: "mulai Rp 64.000",
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2F18cfd2bf5ed7dce1b312f9eae10340bf354448c9-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic tote bag male-bg.png",
-    bgColor: "var(--color-almond-cream-500)",
+    bgColor: "var(--color-almond-cream-50)",
   },
   {
     name: "Classic Dad Cap",
     price: "mulai Rp 81.000",
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fe3bf81c042f8067b3a6ac42b07478f4b434050e4-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic dad cap male-bg.png",
-    bgColor: "var(--color-almond-cream-500)",
+    bgColor: "var(--color-khaki-beige-50)",
   },
   {
     name: "Regular T-Shirts",
     price: "mulai Rp 100.000",
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fa627749e48abb6020a753475a4c36177595696bd-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic tshirt male-bg.png",
-    bgColor: "var(--color-almond-cream-500)",
+    bgColor: "var(--color-stone-brown-50)",
   },
   {
     name: "Boxy Shirt",
     price: "mulai Rp 137.000",
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2F8df4742205ed4de7a9450253c7c8c31012aa5600-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "boxy shirt male-bg.png",
-    bgColor: "var(--color-almond-cream-500)",
+    bgColor: "var(--color-jet-black-50)",
   },
   {
     name: "Classic Boxy Hoodie",
     price: "mulai Rp 235.000",
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fd062d1e2a98e255e7cf40ffcd5f8becc5cb8f4aa-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "boxy hoodie female-bg.png",
-    bgColor: "var(--color-almond-cream-500)",
+    bgColor: "var(--color-almond-cream-50)",
   },
   {
     name: "Classic T-Shirt",
     price: "mulai Rp 235.000",
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fa627749e48abb6020a753475a4c36177595696bd-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic tee female-bg.png",
-    bgColor: "var(--color-almond-cream-500)",
+    bgColor: "var(--color-khaki-beige-50)",
   },
   {
     name: "Classic Longsleeve",
     price: "mulai Rp 137.000",
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2F18cfd2bf5ed7dce1b312f9eae10340bf354448c9-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic longsleeve female-bg.png",
-    bgColor: "var(--color-almond-cream-500)",
+    bgColor: "var(--color-stone-brown-50)",
   },
   {
     name: "Classic Sweathsirts",
     price: "mulai Rp 110.000",
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fa961430465688890d4d0ec588d99da63548ecc6d-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic sweatshirt female-bg.png",
-    bgColor: "var(--color-almond-cream-500)",
+    bgColor: "var(--color-jet-black-50)",
   },
 ]
 
@@ -82,6 +82,7 @@ export default function Home() {
               price={product.price}
               imageDefault={product.imageDefault}
               imageWithModel={product.imageWithModel}
+              bgColor={product.bgColor}
             />
           ))}
         </div>
