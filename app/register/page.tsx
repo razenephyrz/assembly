@@ -8,7 +8,7 @@ export default function RegisterPage() {
       {/* LOGO */}
       <Link
         href="/"
-        className="absolute top-6 left-6 z-10 text-lg font-semibold text-black"
+        className="absolute top-6 left-6 z-10 text-lg font-bold text-black"
       >
         SLASHPRINT™
       </Link>
