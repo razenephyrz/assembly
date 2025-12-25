@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import {
   Drawer,
   DrawerTrigger,
@@ -15,6 +16,9 @@ import {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+
+  if (typeof pathname === "string" && (pathname.startsWith("/login") || pathname.startsWith("/register"))) return null
 
   return (
     <header className="w-full border-b bg-background">
