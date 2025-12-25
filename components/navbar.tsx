@@ -31,7 +31,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Link href="/login" className="inline-flex h-9 w-9 items-center justify-center rounded-md border bg-white p-1 shadow-sm" aria-label="Login">
+          <Link href="/register" className="inline-flex h-9 w-9 items-center justify-center rounded-md border bg-white p-1 shadow-sm" aria-label="Login">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M20 21v-1c0-2.761-4-4-8-4s-8 1.239-8 4v1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
