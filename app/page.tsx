@@ -1,4 +1,5 @@
 import { ProductCard } from "@/components/product-card"
+import Navbar from "@/components/navbar"
 
 const products = [
   {
@@ -7,6 +8,7 @@ const products = [
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2F18cfd2bf5ed7dce1b312f9eae10340bf354448c9-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic tote bag male-bg.png",
     bgColor: "var(--color-almond-cream-50)",
+    href: "/products/tote-bag-classic",
   },
   {
     name: "Classic Dad Cap",
@@ -14,6 +16,7 @@ const products = [
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fe3bf81c042f8067b3a6ac42b07478f4b434050e4-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic dad cap male-bg.png",
     bgColor: "var(--color-khaki-beige-50)",
+    href: "/products/classic-dad-cap",
   },
   {
     name: "Regular T-Shirts",
@@ -21,6 +24,7 @@ const products = [
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fa627749e48abb6020a753475a4c36177595696bd-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic tshirt male-bg.png",
     bgColor: "var(--color-stone-brown-50)",
+    href: "/products/regular-t-shirt",
   },
   {
     name: "Boxy Shirt",
@@ -28,6 +32,7 @@ const products = [
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2F8df4742205ed4de7a9450253c7c8c31012aa5600-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "boxy shirt male-bg.png",
     bgColor: "var(--color-jet-black-50)",
+    href: "/products/boxy-t-shirt",
   },
   {
     name: "Classic Boxy Hoodie",
@@ -35,6 +40,7 @@ const products = [
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fd062d1e2a98e255e7cf40ffcd5f8becc5cb8f4aa-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "boxy hoodie female-bg.png",
     bgColor: "var(--color-almond-cream-50)",
+    href: "/products/classic-boxy-hoodie",
   },
   {
     name: "Classic T-Shirt",
@@ -42,6 +48,7 @@ const products = [
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fa627749e48abb6020a753475a4c36177595696bd-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic tee female-bg.png",
     bgColor: "var(--color-khaki-beige-50)",
+    href: "/products/classic-t-shirt-female",
   },
   {
     name: "Classic Longsleeve",
@@ -49,6 +56,7 @@ const products = [
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2F18cfd2bf5ed7dce1b312f9eae10340bf354448c9-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic longsleeve female-bg.png",
     bgColor: "var(--color-stone-brown-50)",
+    href: "/products/classic-longsleeve-female",
   },
   {
     name: "Classic Sweathsirts",
@@ -56,12 +64,15 @@ const products = [
     imageDefault: "https://studio.rovoassembly.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhyblzf2n%2Fproduction%2Fa961430465688890d4d0ec588d99da63548ecc6d-2000x2750.png%3Ffm%3Dwebp%26fit%3Dcrop&w=384&q=75",
     imageWithModel: "classic sweatshirt female-bg.png",
     bgColor: "var(--color-jet-black-50)",
+    href: "/products/classic-sweatshirt-female",
   },
 ]
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <>
+      <Navbar />
+      <main className="min-h-screen bg-background">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="mb-12">
@@ -83,10 +94,12 @@ export default function Home() {
               imageDefault={product.imageDefault}
               imageWithModel={product.imageWithModel}
               bgColor={product.bgColor}
+              href={product.href}
             />
           ))}
         </div>
       </div>
     </main>
+    </>
   )
 }

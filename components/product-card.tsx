@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 
 interface ProductCardProps {
   name: string
@@ -8,6 +9,7 @@ interface ProductCardProps {
   imageDefault: string
   imageWithModel: string
   bgColor?: string
+  href: string
 }
 
 export function ProductCard({
@@ -16,6 +18,7 @@ export function ProductCard({
   imageDefault,
   imageWithModel,
   bgColor = "var(--color-almond-cream-50)",
+  href,
 }: ProductCardProps) {
   const [isHovered, setIsHovered] = useState(false)
 
@@ -47,7 +50,7 @@ export function ProductCard({
         <div className="relative w-full">
           {/* Price */}
           <div className="absolute right-4 top-4 z-10">
-            <p className="text-xs font-bold text-black">
+            <p className="text-xs font-bold text-black underline">
               {price}
             </p>
           </div>
@@ -100,24 +103,26 @@ export function ProductCard({
             `}
           >
             <div className="flex gap-3">
-              <button
-                className="
-                  flex-1
-                  rounded-md
-                  bg-white
-                  px-3
-                  py-2
-                  text-xs
-                  font-bold
-                  text-black
-                  transition-all
-                  duration-200
-                  hover:-translate-y-0.5
-                  hover:shadow-md
-                "
-              >
-                See Details
-              </button>
+<Link
+              href={href}
+              className="
+                flex-1
+                rounded-md
+                bg-white
+                px-3
+                py-2
+                text-xs
+                font-bold
+                text-black
+                transition-all
+                duration-200
+                hover:-translate-y-0.5
+                hover:shadow-md
+                flex items-center justify-center
+              "
+            >
+              See Details
+            </Link>
 
               <button
                 className="
