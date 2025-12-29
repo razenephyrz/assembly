@@ -32,14 +32,14 @@ export default function ProductDetailPage() {
     <div className="min-h-screen bg-white">
       {/* HEADER */}
       <header className="border-b border-gray-200 px-6 py-4">
-        <div className="flex items-center justify-between relative">
+        <div className="flex items-center gap-12">
           {/* Logo */}
           <div className="text-2xl font-bold tracking-tight">
             SLASH<span className="font-bold">PRINT</span>
           </div>
 
-          {/* Product Name & Customize - Center */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center gap-4">
+          {/* Product Name & Customize - Right */}
+          <div className="flex items-center gap-4 ml-auto">
             <div className="border border-gray-300 rounded-lg px-4 py-2 text-sm font-medium text-gray-700">
               Oversize T-Shirts
             </div>
@@ -173,7 +173,7 @@ export default function ProductDetailPage() {
             <h1 className="text-3xl font-bold">Oversize T-Shirts</h1>
             {/* T-Shirt Icon SVG */}
             <svg
-              className="w-8 h-8 flex-shrink-0"
+              className="w-8 h-8 shrink-0"
               viewBox="0 0 24 24"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"

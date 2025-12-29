@@ -63,14 +63,14 @@ export function ProductCard({
           </div>
 
           {/* IMAGE CONTAINER (HEIGHT LOCKED) */}
-          <div className="bg-white min-h-[420px] flex items-center justify-center overflow-hidden">
+          <div className="bg-white min-h-96 flex items-center justify-center overflow-hidden">
             <img
               src={isHovered ? imageWithModel : imageDefault}
               alt={name}
               className={`
                 w-full
                 h-auto
-                max-h-[400px]
+                max-h-96
                 object-contain
                 p-4
                 transition-all
